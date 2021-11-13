@@ -6,9 +6,22 @@ input {
     background-color: orange !important;
     margin: 0px;
     border-radius: 0px !important;
+    margin-bottom: 10px;
 }
 
 .btn {
     border-radius: 0px;
     margin-right: 4px !important;
+    margin-bottom: 10px;
+}
+
+#redes {
+    margin-left: 20px !important;
+    margin-right: 20px !important;
+    font-size: 18px;
+    margin-bottom: 20px !important;
+}
+
+h3 {
+    font-family: 'Pacifico', cursive;
 }
