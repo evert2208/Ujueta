@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ConsumoService } from '../../services/consumo.service';
+import {Data} from '../../models/data.models'
 
 @Component({
   selector: 'app-service',
@@ -7,9 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiceComponent implements OnInit {
 
-  constructor() { }
+  info: Data[]=[];
+  cargada: boolean =false;
+  constructor(private consumeService: ConsumoService) { }
 
   ngOnInit(): void {
+    this.cargarConsumo();
   }
 
+  cargarConsumo(){
+    this.consumeService.getConsumo().subscribe(resp => {
+      this.cargada=true;
+      console.log(this.cargada);
+      console.log(resp);
+    })
+  }
 }
