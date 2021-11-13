@@ -1,0 +1,12 @@
+.navbar {
+    background-color: goldenrod !important;
+    color: white !important;
+}
+
+.nav-link {
+    color: white !important;
+}
+
+input {
+    background-color: orange !important;
+}
