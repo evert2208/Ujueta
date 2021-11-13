@@ -1,0 +1,14 @@
+.col {
+    color: #949494;
+}
+
+input {
+    background-color: orange !important;
+    margin: 0px;
+    border-radius: 0px !important;
+}
+
+.btn {
+    border-radius: 0px;
+    margin-right: 4px !important;
+}

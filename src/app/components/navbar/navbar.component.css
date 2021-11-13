@@ -5,8 +5,20 @@
 
 .nav-link {
     color: white !important;
+    font-size: 20px;
 }
 
 input {
     background-color: orange !important;
+    margin: 0px;
+    border-radius: 0px !important;
+}
+
+.navbar-toggler-icon {
+    color: white !important;
+}
+
+.btn {
+    border-radius: 0px;
+    margin-right: 4px !important;
 }
