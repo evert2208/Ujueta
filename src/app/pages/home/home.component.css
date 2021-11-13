@@ -2,3 +2,26 @@
     border-color: white !important;
     margin-left: 15px !important;
 }
+
+.btn-outline-info,
+.btn-info {
+    font-size: 20px !important;
+}
+
+#col1 {
+    padding-left: 60px;
+    padding-bottom: 20px;
+}
+
+#col1 button {
+    padding: 12px !important;
+}
+
+#button1 {
+    background-color: #E0B407 !important;
+    padding: 12px !important;
+}
+
+h2 {
+    padding-top: 20px;
+}
