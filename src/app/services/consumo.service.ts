@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http'
-import { Data } from '../models/data.models';
+import { Data, DataResponse } from '../models/data.models';
 import {map} from 'rxjs/operators';
 
 @Injectable({
@@ -16,7 +16,7 @@ export class ConsumoService {
    getConsumo(){
      const url= `../../assets/data/DATA.json`;
 
-      return this.http.get<Data>(url).pipe(
+      return this.http.get<DataResponse>(url).pipe(
         map(
           resp => {
             return resp;

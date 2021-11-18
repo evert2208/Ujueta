@@ -12,17 +12,17 @@
         <span><i class="bi bi-funnel-fill"></i></span>
       </button>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Marca</a></li>
-                <li><a class="dropdown-item" href="#">Articulo</a></li>
-                <li><a class="dropdown-item" href="#">Categoria</a></li>
-                <li><a class="dropdown-item" href="#">Cliente</a></li>
+                <li><a class="dropdown-item" (click)="select()">Marca</a></li>
+                <li><a class="dropdown-item" (click)="select()">Articulo</a></li>
+                <li><a class="dropdown-item" (click)="select()">Categoria</a></li>
+                <li><a class="dropdown-item" (click)="select()">Cliente</a></li>
             </ul>
         </div>
     </div>
 </div>
 
 <div class="row">
-    <div class="container" style="padding-right: 70px; padding-left: 70px; padding-top: 20px;">
+    <div class="container" style="padding-right: 70px; padding-left: 70px; padding-top: 20px; padding-bottom: 20px;">
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header" id="headingOne">
@@ -44,46 +44,20 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
-                                    <td>@mdo</td>
+                                <tr *ngFor="let data of info, let i=index">
+                                    <td>{{data.CategoriaCode}}</td>
+                                    <td>{{data.CardCode}}</td>
+                                    <td>{{data.SlpCode}}</td>
+                                    <td>{{data.FirmCode}}</td>
+                                    <td>{{data.ItemCode}}</td>
+                                    <td>{{data.DocNum}}</td>
                                 </tr>
+
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-
-<div class="row">
-    <div class="container" style=" padding-right: 70px; padding-left: 70px;">
-        <table class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Categoria</th>
-                    <th scope="col">Cliente</th>
-                    <th scope="col">Vendedor</th>
-                    <th scope="col">Marca</th>
-                    <th scope="col">Articulo</th>
-                    <th scope="col"># Pedido</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr *ngFor="let data of info">
-                    <th scope="row">{{data.CategoriaCode}}</th>
-                    <td>{{data.CardCode}}</td>
-                    <td>{{data.SlpCode}}</td>
-                    <td>{{data.FirmCode}}</td>
-                    <td>{{data.ItemCode}}</td>
-                    <td>{{data.DocNum}}</td>
-                </tr>
-            </tbody>
-        </table>
     </div>
 </div>

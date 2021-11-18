@@ -1,15 +1,15 @@
-export interface Data {
-
-    DocNum:        number;
-    CardCode:      string;
-    SlpCode:       number;
-    ItemCode:      string;
-    FirmCode:      number;
-    CategoriaCode: null | string;
-
-
+export interface DataResponse {
+  info: Data[];
 }
 
+export interface Data {
+  DocNum:        number;
+  CardCode:      string;
+  SlpCode:       number;
+  ItemCode:      string;
+  FirmCode:      number;
+  CategoriaCode: null | string;
+}
 // export enum Canal {
 //   AlmacenCadena = "ALMACEN CADENA",
 //   CentrosDeServicios = "CENTROS DE SERVICIOS",
