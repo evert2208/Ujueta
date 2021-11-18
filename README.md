@@ -1,6 +1,10 @@
 # PruebaUjueta
 
+la parte del consumo del JSON se encuentra en el pages service.
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.6.
+
 
 ## Development server
 
